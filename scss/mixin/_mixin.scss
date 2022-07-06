@@ -1,0 +1,11 @@
+/* p{
+    color: $color-4
+} */
+
+/* Mixing mezcla clases, con @include se utilizan */
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

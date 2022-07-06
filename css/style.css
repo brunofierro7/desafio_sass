@@ -1,0 +1,177 @@
+/* p{
+    color: $color-4
+} */
+/* Mixing mezcla clases, con @include se utilizan */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+/* COLORES */
+body {
+  background-image: linear-gradient(to top, #b7d3c1, #ffffff, #b9c199, #d8cfac, #f2dec4);
+}
+
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-pad > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.color-nav {
+  background-image: linear-gradient(to right top, rgb(105, 134, 101), rgb(61, 35, 35));
+}
+@media screen and (min-width: 1024px) {
+  .color-nav {
+    background-image: linear-gradient(to left top, rgb(105, 134, 101), rgb(61, 35, 35));
+  }
+}
+
+a:hover {
+  color: rgb(44, 194, 69);
+}
+
+.h1-nav {
+  color: #F2DEC4;
+  text-shadow: 0px 0px 10px rgb(140, 196, 109);
+  margin-top: 12px;
+  text-align: end;
+}
+
+.menu-pc {
+  width: 77%;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4em;
+  text-shadow: 0px 0px 15px white;
+}
+
+.menu-cel {
+  margin-top: 3vh;
+  height: 81vh;
+  width: 100vw;
+  list-style: none;
+  display: grid;
+  background-image: linear-gradient(to left top, rgb(129, 155, 70), rgb(96, 121, 145));
+}
+@media screen and (min-width: 1024px) {
+  .menu-cel {
+    display: none;
+  }
+}
+
+.menu-cel li {
+  font-size: 1.9em;
+  text-align: center;
+  width: 100%;
+}
+
+.inicio-h2 {
+  margin-top: 8vh;
+  margin-bottom: 10vh;
+  font-size: 14vw;
+  text-align: center;
+  line-height: 1.5em;
+  color: white;
+  text-shadow: 0px 0px 20px rgb(57, 168, 35);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@media screen and (min-width: 1024px) {
+  .inicio-h2 {
+    font-size: 8vw;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(33, 141, 33), 0 0 20px #fff, 0 0 30px #6bc759, 0 0 40px #51b86a, 0 0 50px #5ca187, 0 0 60px #47e6f1, 0 0 70px #3de09d;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(40, 77, 45), 0 0 30px #4dd5ff, 0 0 40px #4d5fff, 0 0 50px #1f9214, 0 0 60px #4dff88, 0 0 70px #4dff7a, 0 0 80px #0e0e0e;
+  }
+}
+.img-carousel {
+  height: auto;
+  width: 90vw;
+  border: 3px solid rgb(243, 250, 243);
+  box-shadow: 0px 0px 10px rgb(109, 184, 109);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .img-carousel {
+    height: 86vh;
+    width: auto;
+  }
+}
+
+footer {
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  text-shadow: 0px 0px 25px rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  margin-top: 10vh;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+  footer .datos {
+    font-size: 1.3em;
+  }
+}
+
+.iconos-footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.wpp-ico {
+  height: 40px;
+  margin-right: 1vw;
+}
+
+.ig-ico {
+  height: 40px;
+  align-self: center;
+  margin-right: 1vw;
+  margin-left: 3vw;
+}
+
+.datoswpp:hover {
+  color: rgb(61, 194, 61);
+}
+
+.datosig:hover {
+  color: rgb(224, 67, 177);
+}
+
+.h1-sucu {
+  height: 6.5vh;
+  margin-top: -10px;
+}
+
+/*# sourceMappingURL=style.css.map */
